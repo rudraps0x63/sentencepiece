@@ -37,7 +37,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -62,4 +62,4 @@ const ImplicitWeakMessage* ImplicitWeakMessage::default_instance() {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

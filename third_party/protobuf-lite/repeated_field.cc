@@ -42,7 +42,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 namespace internal {
@@ -133,4 +133,4 @@ template class PROTOBUF_EXPORT_TEMPLATE_DEFINE RepeatedField<double>;
 template class PROTOBUF_EXPORT_TEMPLATE_DEFINE RepeatedPtrField<std::string>;
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

@@ -114,7 +114,7 @@
 #include <google/protobuf/port_def.inc>
 
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace io {
 
@@ -246,7 +246,7 @@ class PROTOBUF_EXPORT ZeroCopyOutputStream {
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

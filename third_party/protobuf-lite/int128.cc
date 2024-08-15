@@ -38,7 +38,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 const uint128_pod kuint128max = {
@@ -189,4 +189,4 @@ std::ostream& operator<<(std::ostream& o, const uint128& b) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

@@ -40,7 +40,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/logging.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 #ifdef _MSC_VER
@@ -173,4 +173,4 @@ std::string StringPrintfVector(const char* format,
                       cstr[30], cstr[31]);
 }
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

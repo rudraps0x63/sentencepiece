@@ -41,7 +41,7 @@
 #include <google/protobuf/port_def.inc>
 #include <vector>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 #if defined(_MSC_VER) && _MSC_VER < 1800
@@ -946,7 +946,7 @@ double NoLocaleStrtod(const char* str, char** endptr);
 }  // namespace internal
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

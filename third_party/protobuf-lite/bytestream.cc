@@ -35,7 +35,7 @@
 
 #include <google/protobuf/stubs/logging.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace strings {
 
@@ -195,4 +195,4 @@ void LimitByteSource::CopyTo(ByteSink *sink, size_t n) {
 
 }  // namespace strings
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

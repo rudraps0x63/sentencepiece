@@ -34,7 +34,7 @@
 
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -612,4 +612,4 @@ char* UTF8CoerceToStructurallyValid(StringPiece src_str, char* idst,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

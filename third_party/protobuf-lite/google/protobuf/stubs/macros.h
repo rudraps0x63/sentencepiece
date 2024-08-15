@@ -33,7 +33,7 @@
 
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 #undef GOOGLE_DISALLOW_EVIL_CONSTRUCTORS
@@ -115,6 +115,6 @@ struct CompileAssert {
 #define GOOGLE_COMPILE_ASSERT(expr, msg) static_assert(expr, #msg)
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #endif  // GOOGLE_PROTOBUF_MACROS_H__

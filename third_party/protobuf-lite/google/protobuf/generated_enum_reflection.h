@@ -51,13 +51,13 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 class EnumDescriptor;
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // Returns the EnumDescriptor for enum type E, which must be a
@@ -91,7 +91,7 @@ PROTOBUF_EXPORT const std::string& NameOfEnum(const EnumDescriptor* descriptor,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

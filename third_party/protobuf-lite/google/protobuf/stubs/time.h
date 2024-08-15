@@ -34,7 +34,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -73,7 +73,7 @@ bool PROTOBUF_EXPORT ParseTime(const std::string& value, int64* seconds,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

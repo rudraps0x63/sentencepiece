@@ -35,7 +35,7 @@
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/metadata_lite.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -271,6 +271,6 @@ const char* ExtensionSet::ParseMessageSetItemTmpl(
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #endif  // GOOGLE_PROTOBUF_EXTENSION_SET_INL_H__

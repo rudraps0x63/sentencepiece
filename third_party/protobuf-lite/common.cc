@@ -63,7 +63,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 namespace internal {
@@ -326,4 +326,4 @@ const char* FatalException::what() const throw() {
 #endif
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

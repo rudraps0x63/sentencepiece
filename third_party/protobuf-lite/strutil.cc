@@ -57,7 +57,7 @@
 #define snprintf _snprintf
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // These are defined as macros on some platforms.  #undef them so that we can
@@ -2474,4 +2474,4 @@ double NoLocaleStrtod(const char *str, char **endptr) {
 }  // namespace internal
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

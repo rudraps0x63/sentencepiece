@@ -73,7 +73,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 class Message;
@@ -483,7 +483,7 @@ class RepeatedField final {
   using FastAdder = FastAdderImpl<>;
 
   friend class TestRepeatedFieldHelper;
-  friend class ::google::protobuf::internal::ParseContext;
+  friend class ::google_::protobuf::internal::ParseContext;
 };
 
 namespace internal {
@@ -792,7 +792,7 @@ class PROTOBUF_EXPORT RepeatedPtrFieldBase {
   friend class MergePartialFromCodedStreamHelper;
   friend class AccessorHelper;
   template <typename T>
-  friend struct google::protobuf::WeakRepeatedPtrField;
+  friend struct google_::protobuf::WeakRepeatedPtrField;
 
   GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(RepeatedPtrFieldBase);
 };
@@ -2840,7 +2840,7 @@ extern template class PROTOBUF_EXPORT_TEMPLATE_DECLARE
     RepeatedPtrField<std::string>;
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

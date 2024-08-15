@@ -45,7 +45,7 @@
 static const size_t kMinCleanupListElements = 8;
 static const size_t kMaxCleanupListElements = 64;  // 1kB on 64-bit.
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 PROTOBUF_EXPORT /*static*/ void* (*const ArenaOptions::kDefaultBlockAlloc)(
@@ -446,4 +446,4 @@ void* Arena::AllocateAlignedNoHook(size_t n) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

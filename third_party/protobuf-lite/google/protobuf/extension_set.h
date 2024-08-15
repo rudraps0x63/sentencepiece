@@ -59,7 +59,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 class Arena;
 class Descriptor;       // descriptor.h
@@ -73,9 +73,9 @@ namespace internal {
 class FieldSkipper;  // wire_format_lite.h
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -1295,7 +1295,7 @@ class RepeatedMessageTypeTraits {
     // See notes above in RepeatedEnumTypeTraits::GetRepeated(): same
     // casting hack applies here, because a RepeatedPtrField<MessageLite>
     // cannot naturally become a RepeatedPtrType<Type> even though Type is
-    // presumably a message. google::protobuf::Message goes through similar contortions
+    // presumably a message. google_::protobuf::Message goes through similar contortions
     // with a reinterpret_cast<>.
     return *reinterpret_cast<const RepeatedPtrField<Type>*>(
         set.GetRawRepeatedField(number, GetDefaultRepeatedField()));
@@ -1556,7 +1556,7 @@ class ExtensionIdentifier {
 // Call this function to ensure that this extensions's reflection is linked into
 // the binary:
 //
-//   google::protobuf::LinkExtensionReflection(Foo::my_extension);
+//   google_::protobuf::LinkExtensionReflection(Foo::my_extension);
 //
 // This will ensure that the following lookup will succeed:
 //
@@ -1578,13 +1578,13 @@ class ExtensionIdentifier {
 template <typename ExtendeeType, typename TypeTraitsType,
           internal::FieldType field_type, bool is_packed>
 void LinkExtensionReflection(
-    const google::protobuf::internal::ExtensionIdentifier<
+    const google_::protobuf::internal::ExtensionIdentifier<
         ExtendeeType, TypeTraitsType, field_type, is_packed>& extension) {
   internal::StrongReference(extension);
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

@@ -42,7 +42,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -241,7 +241,7 @@ class PROTOBUF_EXPORT LiteUnknownFieldSetter {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

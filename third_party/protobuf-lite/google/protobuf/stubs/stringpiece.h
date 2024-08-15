@@ -152,7 +152,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 // StringPiece has *two* size types.
 // StringPiece::size_type
@@ -470,7 +470,7 @@ struct StringPiecePod {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 GOOGLE_PROTOBUF_HASH_NAMESPACE_DECLARATION_START
 template<> struct hash<StringPiece> {

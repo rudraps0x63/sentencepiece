@@ -57,7 +57,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 class InternalMetadata;           // metadata_lite.h
@@ -405,7 +405,7 @@ inline void UnknownField::SetType(Type type) {
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 #endif  // GOOGLE_PROTOBUF_UNKNOWN_FIELD_SET_H__

@@ -60,7 +60,7 @@
 
 class CordByteSink;
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace strings {
 
@@ -344,7 +344,7 @@ class PROTOBUF_EXPORT LimitByteSource : public ByteSource {
 
 }  // namespace strings
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

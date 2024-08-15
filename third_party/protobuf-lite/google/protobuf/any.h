@@ -39,7 +39,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 class FieldDescriptor;
@@ -54,7 +54,7 @@ extern const char kTypeGoogleProdComPrefix[];  // "type.googleprod.com/".
 std::string GetTypeUrl(StringPiece message_name,
                        StringPiece type_url_prefix);
 
-// Helper class used to implement google::protobuf::Any.
+// Helper class used to implement google_::protobuf::Any.
 class PROTOBUF_EXPORT AnyMetadata {
   typedef ArenaStringPtr UrlType;
   typedef ArenaStringPtr ValueType;
@@ -124,7 +124,7 @@ class PROTOBUF_EXPORT AnyMetadata {
 // in the type url separating the full type name.
 //
 // NOTE: this function is available publicly as:
-//   google::protobuf::Any()  // static method on the generated message type.
+//   google_::protobuf::Any()  // static method on the generated message type.
 bool ParseAnyTypeUrl(StringPiece type_url, std::string* full_type_name);
 
 // Get the proto type name and prefix from Any::type_url value. For example,
@@ -143,7 +143,7 @@ bool GetAnyFieldDescriptors(const Message& message,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

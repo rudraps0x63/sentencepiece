@@ -34,7 +34,7 @@
 
 #include <google/protobuf/generated_message_util.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 namespace {
@@ -92,4 +92,4 @@ bool InitializeEnumStrings(
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

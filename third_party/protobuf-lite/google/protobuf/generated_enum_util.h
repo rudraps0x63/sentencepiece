@@ -42,7 +42,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // This type trait can be used to cause templates to only match proto2 enum
@@ -76,7 +76,7 @@ PROTOBUF_EXPORT bool InitializeEnumStrings(
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

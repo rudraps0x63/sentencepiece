@@ -114,7 +114,7 @@
 #error "Protobuf requires at least C++11."
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 using ConstStringParam = const std::string &;
@@ -398,7 +398,7 @@ class BigEndian {
 };
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

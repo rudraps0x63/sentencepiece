@@ -10,7 +10,7 @@
 // ===================================================================
 // emulates google3/base/callback.h
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // Abstract interface for a callback.  When calling an RPC, you must provide
@@ -576,7 +576,7 @@ inline ResultCallback2<R, A1, A2>* NewPermanentCallback(
 void PROTOBUF_EXPORT DoNothing();
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

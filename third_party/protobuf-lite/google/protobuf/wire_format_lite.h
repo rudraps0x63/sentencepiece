@@ -67,7 +67,7 @@
 #undef TYPE_BOOL
 
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -1859,7 +1859,7 @@ bool ParseMessageSetItemImpl(io::CodedInputStream* input, MS ms) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

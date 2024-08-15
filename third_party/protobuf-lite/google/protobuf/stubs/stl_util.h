@@ -35,7 +35,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // Inside Google, this function implements a horrible, disgusting hack in which
@@ -66,6 +66,6 @@ inline char* string_as_array(std::string* str) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STL_UTIL_H__

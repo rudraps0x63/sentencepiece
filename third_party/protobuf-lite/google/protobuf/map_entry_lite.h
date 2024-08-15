@@ -50,7 +50,7 @@
 #error "You cannot SWIG proto headers"
 #endif
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 template <typename Derived, typename Key, typename Value,
@@ -63,9 +63,9 @@ template <typename Derived, typename Key, typename Value,
 class MapFieldLite;
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 
@@ -223,7 +223,7 @@ class MapEntryImpl : public Base {
   std::string GetTypeName() const override { return ""; }
 
   void CheckTypeAndMergeFrom(const MessageLite& other) override {
-    MergeFromInternal(*::google::protobuf::internal::DownCast<const Derived*>(&other));
+    MergeFromInternal(*::google_::protobuf::internal::DownCast<const Derived*>(&other));
   }
 
   const char* _InternalParse(const char* ptr, ParseContext* ctx) final {
@@ -262,7 +262,7 @@ class MapEntryImpl : public Base {
     return size;
   }
 
-  ::google::protobuf::uint8* _InternalSerialize(::google::protobuf::uint8* ptr,
+  ::google_::protobuf::uint8* _InternalSerialize(::google_::protobuf::uint8* ptr,
                               io::EpsCopyOutputStream* stream) const override {
     ptr = KeyTypeHandler::Write(kKeyFieldNumber, key(), ptr, stream);
     return ValueTypeHandler::Write(kValueFieldNumber, value(), ptr, stream);
@@ -646,7 +646,7 @@ struct MapEntryHelper<
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

@@ -57,7 +57,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 std::string MessageLite::InitializationErrorString() const {
@@ -580,4 +580,4 @@ void ShutdownProtobufLibrary() {
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

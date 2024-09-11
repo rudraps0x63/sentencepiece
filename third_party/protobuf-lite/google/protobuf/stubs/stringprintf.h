@@ -48,7 +48,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 // Return a C++ string
@@ -78,7 +78,7 @@ PROTOBUF_EXPORT extern std::string StringPrintfVector(
     const char* format, const std::vector<std::string>& v);
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

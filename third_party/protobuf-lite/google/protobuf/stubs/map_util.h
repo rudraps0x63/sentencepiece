@@ -42,7 +42,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace internal {
 // Local implementation of RemoveConst to avoid including base/type_traits.h.
@@ -764,6 +764,6 @@ void AppendValuesFromMap(const MapContainer& map_container,
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #endif  // GOOGLE_PROTOBUF_STUBS_MAP_UTIL_H__

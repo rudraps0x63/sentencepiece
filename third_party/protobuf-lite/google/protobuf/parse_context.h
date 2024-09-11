@@ -49,7 +49,7 @@
 #include <google/protobuf/port_def.inc>
 
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 class UnknownFieldSet;
@@ -862,7 +862,7 @@ PROTOBUF_EXPORT PROTOBUF_MUST_USE_RESULT const char* UnknownFieldParse(
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

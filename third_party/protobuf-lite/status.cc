@@ -34,7 +34,7 @@
 #include <string>
 #include <utility>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace util {
 namespace error {
@@ -131,4 +131,4 @@ std::ostream& operator<<(std::ostream& os, const Status& x) {
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_

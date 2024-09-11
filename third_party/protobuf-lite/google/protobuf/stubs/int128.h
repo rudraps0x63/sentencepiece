@@ -36,7 +36,7 @@
 
 #include <google/protobuf/port_def.inc>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 
 struct uint128_pod;
@@ -380,7 +380,7 @@ inline uint128& uint128::operator--() {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
 
 #include <google/protobuf/port_undef.inc>
 

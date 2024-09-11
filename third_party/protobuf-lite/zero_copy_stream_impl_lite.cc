@@ -42,7 +42,7 @@
 #include <google/protobuf/stubs/casts.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace google_ {
 namespace protobuf {
 namespace io {
 
@@ -464,4 +464,4 @@ int64_t LimitingInputStream::ByteCount() const {
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace google_
